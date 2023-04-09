@@ -14,13 +14,11 @@ const props = defineProps<Props>()
 const title = props.title
 const static_ = props.static
 const position = props.position
-const size_ = props.size
 let modalClass = ref([])
 const updateSizeClasses = onBeforeMount(()=>{
-  if (size_) {
-    let posClass: string = size_ === 'xl' ? 'modal-xl' : (size_ === 'lg'? 'modal-lg': size_ === 'sm' ? 'modal-xl' : 'modal-md')
+  const size = props.size
+  let posClass: string = size === 'xl' ? 'modal-xl' : (size === 'lg'? 'modal-lg': size === 'sm' ? 'modal-xl' : 'modal-md')
     modalClass.value.push(posClass)
-  }
 })
 
 </script>

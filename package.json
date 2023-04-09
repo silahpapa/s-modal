@@ -1,6 +1,6 @@
 {
-  "name": "s-modal",
-  "version": "1.0.0",
+  "name": "shb-modal",
+  "version": "1.0.1",
   "description": "boostrap tailwind modal making work easy",
   "main": "index.vue",
   "scripts": {
